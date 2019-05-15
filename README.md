@@ -7,6 +7,8 @@ Module for getting install referrer on android, using Google Play Install Referr
 
 `$ npm install react-native-install-referrer --save`
 
+or
+
 `$ yarn add react-native-install-referrer`
 
 ### Mostly automatic installation
@@ -36,7 +38,7 @@ import RNInstallReferrer from 'react-native-install-referrer';
 ...
 const referrer = await RNInstallReferrer.getReferrer();
 console.log(referrer);
-//	or
+//  or
 RNInstallReferrer.getReferrer().then(referrer=>console.log(referrer));
 
 //  response example:
@@ -45,7 +47,9 @@ RNInstallReferrer.getReferrer().then(referrer=>console.log(referrer));
 //  	"installReferrer": "utm_source=google-play&utm_medium=organic",
 //  	"clickTimestamp": "1557907970",
 //  }
+//
 //  or
+//
 //  {
 //  	"message": "some error message",
 //  }

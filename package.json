@@ -1,10 +1,16 @@
 {
   "name": "react-native-install-referrer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
+  "homepage": "https://github.com/Gretchin/react-native-install-referrer#readme",
+  "license": "MIT",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Gretchin/react-native-install-referrer"
   },
   "keywords": [
     "react-native",
@@ -15,7 +21,6 @@
     "install-referrer"
   ],
   "author": "Aleksandr Urusovsky",
-  "license": "MIT",
   "peerDependencies": {
     "react-native": "^0.41.2"
   }
