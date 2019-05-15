@@ -1,0 +1,22 @@
+{
+  "name": "react-native-install-referrer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-native",
+    "react native",
+    "Play Install Referrer API",
+    "referrer",
+    "android",
+    "install-referrer"
+  ],
+  "author": "Aleksandr Urusovsky",
+  "license": "MIT",
+  "peerDependencies": {
+    "react-native": "^0.41.2"
+  }
+}
