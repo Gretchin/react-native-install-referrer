@@ -6,7 +6,6 @@ import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.Promise;
-import com.facebook.react.bridge.Callback;
 
 import android.os.RemoteException;
 
@@ -67,7 +66,7 @@ public class RNInstallReferrerModule extends ReactContextBaseJavaModule {
         }
       });
     } catch (RuntimeException e) {
-      promise.error(e);
+      promise.reject(e);
     }
   }
 }
