@@ -51,7 +51,7 @@ public class RNInstallReferrerModule extends ReactContextBaseJavaModule {
             } catch (IllegalStateException e) {
               result.putString("error", e.getMessage());
               e.printStackTrace();
-            }	            }
+            }
             break;
           case InstallReferrerClient.InstallReferrerResponse.FEATURE_NOT_SUPPORTED:
             result.putString("message", "FEATURE_NOT_SUPPORTED");
