@@ -8,6 +8,7 @@ import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.Promise;
 
 import android.os.RemoteException;
+import java.lang.IllegalStateException;
 
 import com.android.installreferrer.api.InstallReferrerClient;
 import com.android.installreferrer.api.InstallReferrerStateListener;
@@ -47,7 +48,10 @@ public class RNInstallReferrerModule extends ReactContextBaseJavaModule {
             } catch (RemoteException e) {
               result.putString("error", e.getMessage());
               e.printStackTrace();
-            }
+            } catch (IllegalStateException e) {
+              result.putString("error", e.getMessage());
+              e.printStackTrace();
+            }	            }
             break;
           case InstallReferrerClient.InstallReferrerResponse.FEATURE_NOT_SUPPORTED:
             result.putString("message", "FEATURE_NOT_SUPPORTED");
