@@ -20,7 +20,7 @@ or
 #### Android
 
 1. Open up `android/app/src/main/java/[...]/MainAplication.java`
-  - Add `import com.reactlibrary.RNInstallReferrerPackage;` to the imports at the top of the file
+  - Add `import com.rninstallreferrer.RNInstallReferrerPackage;` to the imports at the top of the file
   - Add `new RNInstallReferrerPackage()` to the list returned by the `getPackages()` method
 2. Append the following lines to `android/settings.gradle`:
   	```
@@ -56,4 +56,4 @@ RNInstallReferrer.getReferrer().then(referrer=>console.log(referrer));
 ```
 
 ## Caution
-The install referrer information will be available for 90 days and won't change unless the application is reinstalled. To avoid unecessary API calls in your app, you should invoke the API only once during the first execution after install. 
+The install referrer information will be available for 90 days and won't change unless the application is reinstalled. To avoid unecessary API calls in your app, you should invoke the API only once during the first execution after install.
