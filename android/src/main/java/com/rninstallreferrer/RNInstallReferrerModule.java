@@ -69,7 +69,7 @@ public class RNInstallReferrerModule extends ReactContextBaseJavaModule {
         public void onInstallReferrerServiceDisconnected() {
         }
       });
-    } catch (RuntimeException e) {
+    } catch (Exception  e) {
       promise.reject(e);
     }
   }
